@@ -18,5 +18,3 @@ docker run -d \
 --name mongo-express \
 -e ME_CONFIG_MONGODB_SERVER=mongodb \
 mongo-express
-
--e ME_CONFIG_MONGODB_URL=mongodb://admin:password@mongodb \
