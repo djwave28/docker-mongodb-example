@@ -1,4 +1,7 @@
-# successful command: respond on http://localhost:27017
+# commands
+
+## start mongodb: 
+### respond on http://localhost:27017
 docker run -d \
 -p 27017:27017 \
 -e MONGO_INITDB_ROOT_USERNAME=admin \
@@ -8,7 +11,7 @@ docker run -d \
 mongo
 
 
-
+## start mongo-express: 
 
 docker run -d \
 -p 8081:8081 \
@@ -18,3 +21,5 @@ docker run -d \
 --name mongo-express \
 -e ME_CONFIG_MONGODB_SERVER=mongodb \
 mongo-express
+
+-e ME_CONFIG_MONGODB_URL=mongodb://admin:password@mongodb \

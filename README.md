@@ -36,3 +36,11 @@ _You can access the application under localhost:3000 from your browser_
     docker build -t my-app:1.0 .       
     
 The dot "." at the end of the command denotes location of the Dockerfile.
+
+
+## Volumes
+Depending on the service the data can be stored on a volume for persistent 
+data. Serch for the default data directory location.
+mongodb = '/data/db
+
+[expanation here](https://youtu.be/3c-iBn73dDE?t=9312)
